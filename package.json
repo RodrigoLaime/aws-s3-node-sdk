@@ -1,0 +1,26 @@
+{
+  "name": "aws-s3-node-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoLaime/aws-s3-node-sdk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoLaime/aws-s3-node-sdk/issues"
+  },
+  "homepage": "https://github.com/RodrigoLaime/aws-s3-node-sdk#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0"
+  }
+}
