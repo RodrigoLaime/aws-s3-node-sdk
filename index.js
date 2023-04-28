@@ -2,6 +2,8 @@ import express from 'express';
 
 import fileUpload from 'express-fileupload';
 
+import {uploadFile} from "./s3.js";
+
 import './config.js'
 
 const app = express();
@@ -17,8 +19,9 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.post('/files', (req, res) => {
-  res.send(req.files);
+app.post('/files', async(req, res) => {
+  // res.send(req.files);
+  await uploadFile(req.files.file)
   res.json({message: 'upload files'})
 });
 
