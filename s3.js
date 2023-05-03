@@ -44,7 +44,7 @@ export async function getFiles() {
     Bucket: AWS_BUCKET_NAME
   })
   const result = await client.send(command)
-  console.log(result);
+  // console.log(result);
   return result;
 }
 

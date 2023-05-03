@@ -21,6 +21,9 @@ app.use(fileUpload({
 
 app.get('/files', async (req, res) => {
   const result = await getFiles()
+  result.Contents.forEach(e => {
+    console.log(e.Key)
+  });
   res.json(result.Contents)
 });
 
